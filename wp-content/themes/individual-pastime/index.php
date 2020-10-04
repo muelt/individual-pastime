@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
   <main class="c_main" role="main">
     <div class="e_article_lists">
       <div class="e_article_lists">
