@@ -20,21 +20,21 @@
  */
 ?>
 <div class="c_comment_area">
-<?php if ( have_comments() ) : ?>
-		<h2 class="e_comment_title">この記事へのコメント</h2>
-<?php
-	wp_list_comments(array(
-      'avatar_size'=>48,
-      'style'=>'ul',
-      'type'=>'comment',
-      'callback'=>'mytheme_comments'
-     ));
-	endif;
-	comment_form( array(
-			'title_reply' => '<p class="e_comment_title">' . esc_html__( 'Message', 'poseidon' ) . '</p>',
-			'comment_notes_after' => '',
-			)
-		);
-	?>
+  <?php if (have_comments()) : ?>
+    <h2 class="e_comment_title">この記事へのコメント</h2>
+    <?php
+    wp_list_comments(array(
+      'avatar_size' => 48,
+      'style' => 'ul',
+      'type' => 'comment',
+      'callback' => 'mytheme_comments'
+    ));
+  endif;
+  comment_form(array(
+      'title_reply' => '<p class="e_comment_title">' . esc_html__('Message', 'poseidon') . '</p>',
+      'comment_notes_after' => '',
+    )
+  );
+  ?>
 
 </div><!-- #comments -->
