@@ -25,7 +25,9 @@
 
 <meta name="google-site-verification" content="G2X39gTFqkzWxVD5x9VU3_JBfkdnC0E8Geayky2J55Y">
 <meta name="description" content="" />
-<link rel="stylesheet" href="<?php bloginfo ('stylesheet_url'); ?>" type="text/css" />
+<link rel="stylesheet" href="<?php bloginfo ('stylesheet_url'); ?>?<?php echo date("YmdHis"); ?>" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_theme_file_uri() ?>/assets/css/pc.css?<?php echo date("YmdHis"); ?>" type="text/css" media="screen and (min-width:1040px)"/>
+<link rel="stylesheet" href="<?php echo get_theme_file_uri() ?>/assets/css/sp.css?<?php echo date("YmdHis"); ?>" type="text/css" media="screen and (max-width:1040px)"/>
 <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 <?php wp_head(); ?>
 
