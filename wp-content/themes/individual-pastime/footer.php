@@ -1,6 +1,7 @@
 </div>
 <footer class="c_footer" role="footer">
   <p>&copy;<?php bloginfo('name'); ?></p>
+  <p><a href="/blog">記事一覧</a></p>
   <p><a href="/policy">プライバシーポリシー</a></p>
 </footer>
 <?php wp_footer(); ?>
