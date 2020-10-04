@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
   <main class="c_main" role="main">
     <h2 class="e_archive_title"><?php single_cat_title(); ?></h2>
     <?php if (have_posts()) : ?>
@@ -9,9 +8,11 @@
           <!-- アイテム情報 -->
           <div class="e_article_item">
             <div class="e_article_img">
-              <a href="<?php the_permalink(); ?>"><img
+              <a href="<?php the_permalink(); ?>">
+                <img
                   src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>"
-                  alt="<?php echo get_the_title(); ?>"></a>
+                  alt="<?php echo get_the_title(); ?>">
+              </a>
             </div>
             <div class="e_article_contents">
               <a href="<?php the_permalink(); ?>">
